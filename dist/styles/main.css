@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  line-height: 1.3;
+  font-family: "Manrope", sans-serif;
+  font-size: 0.8125rem;
+  background-color: #ecf2f8;
+  padding: 1.875rem;
+  color: #48556a;
+}
+
+@media only screen and (min-width: 620px) {
+  body {
+    padding: 3.75rem;
+  }
+}
+
+a,
+a:active,
+a:visited {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.article {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  justify-items: center;
+  overflow: hidden;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 10px -2.5px;
+          box-shadow: 0px 0px 10px -2.5px;
+  border-radius: 10px;
+  max-width: 56.25rem;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 620px) {
+  .article {
+    -ms-grid-columns: 40% 60%;
+        grid-template-columns: 40% 60%;
+  }
+  .article .article__image {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .article .article__content {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+}
+
+.article__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.article__content {
+  padding: 2.125rem 1.5rem;
+}
+
+.article__content .article__title {
+  font-size: 1.25rem;
+}
+
+.article__content .article__description {
+  opacity: 0.7;
+  line-height: 1.5;
+}
+
+.article__author {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 3.75rem 1fr 3.125rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.article__author > img {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  margin: 0 auto;
+}
+
+.article__author > ul {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  line-height: 1.5;
+}
+
+.article__author > ul .author-name {
+  font-weight: bold;
+}
+
+.article__author > ul .date-published {
+  opacity: 0.6;
+}
+
+.article__author > a {
+  -ms-grid-column: 3;
+  grid-column: 3;
+  text-align: center;
+}
+
+.attribution {
+  margin-top: 50px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=main.css.map */
