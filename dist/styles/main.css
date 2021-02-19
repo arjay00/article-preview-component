@@ -86,7 +86,7 @@ ul {
       grid-template-rows: repeat(3, auto);
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  padding: 0.8125rem 1.875rem;
+  padding: 0.8125rem 1.875rem 0 1.875rem;
 }
 
 .article__content .article__title {
