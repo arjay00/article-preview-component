@@ -80,7 +80,13 @@ ul {
 }
 
 .article__content {
-  padding: 2.125rem 1.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[3];
+      grid-template-rows: repeat(3, auto);
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  padding: 0.8125rem 1.875rem;
 }
 
 .article__content .article__title {
@@ -95,7 +101,7 @@ ul {
 .article__author {
   display: -ms-grid;
   display: grid;
-  grid-auto-columns: 3.75rem 1fr 3.125rem;
+  grid-auto-columns: 4.375rem 1fr 2.5rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -107,7 +113,6 @@ ul {
   border-radius: 50%;
   -ms-grid-column: 1;
   grid-column: 1;
-  margin: 0 auto;
 }
 
 .article__author > ul {

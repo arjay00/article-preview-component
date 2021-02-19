@@ -36,7 +36,10 @@
   }
 
   &__content {
-    padding: convertPxToRem(34) convertPxToRem(24);
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 1fr;
+    padding: convertPxToRem(13) convertPxToRem(30);
 
     .article__title {
       font-size: convertPxToRem(20);
@@ -50,7 +53,7 @@
 
   &__author {
     display: grid;
-    grid-auto-columns: convertPxToRem(60) 1fr convertPxToRem(50);
+    grid-auto-columns: convertPxToRem(70) 1fr convertPxToRem(40);
     align-items: center;
 
     > img {
@@ -58,7 +61,6 @@
       width: convertPxToRem(40);
       border-radius: 50%;
       grid-column: 1;
-      margin: 0 auto;
     }
 
     > ul {
